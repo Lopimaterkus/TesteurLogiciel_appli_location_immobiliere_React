@@ -5,7 +5,7 @@ export default function Card({ data }) {
   const { id, title, cover } = data
   return (
     <article>
-      <Link to={`/apartment/${id}`} className="card">
+      <Link to={`/appartment/${id}`} className="card">
         <img src={cover} alt={title} className="card-img" />
         <div className="card-div"></div>
         <h2>{title}</h2>

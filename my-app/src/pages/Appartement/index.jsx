@@ -8,47 +8,47 @@ import Rate from '../../components/Rate'
 import Collapse from '../../components/Collapse'
 import '../../styles/appartement.css'
 
-export default function Apartment() {
+export default function Appartment() {
   const { id } = useParams()
-  const getApartment = accomodations.find((apart) => {
-    return apart.id === id
+  const getAppartment = accomodations.find((appart) => {
+    return appart.id === id
   })
 
-  if (getApartment === undefined) {
+  if (getAppartment === undefined) {
     return <Error />
   }
 
   return (
     <>
-      <Carousel pictures={getApartment.pictures}></Carousel>
-      <div className="apart-div">
-        <div className="apart-title-tag">
-          <Title title={getApartment.title} location={getApartment.location} />
+      <Carousel pictures={getAppartment.pictures}></Carousel>
+      <div className="appart-div">
+        <div className="appart-title-tag">
+          <Title title={getAppartment.title} location={getAppartment.location} />
           <div className="tags">
-            {getApartment.tags?.map((tag, index) => (
+            {getAppartment.tags?.map((tag, index) => (
               <div className="tag-text" key={index}>
                 {tag}
               </div>
             ))}
           </div>
         </div>
-        <div className="apart-rate-host">
-          <Host host={getApartment.host} />
-          <Rate rating={getApartment.rating} />
+        <div className="appart-rate-host">
+          <Host host={getAppartment.host} />
+          <Rate rating={getAppartment.rating} />
         </div>
       </div>
-      <div className="apart-collapse">
+      <div className="appart-collapse">
         <ul>
           <li>
             <Collapse
               title="Description"
-              description={getApartment.description}
+              description={getAppartment.description}
             />
           </li>
           <li>
             <Collapse
               title="Équipements"
-              description={getApartment.equipments?.map((item, index) => (
+              description={getAppartment.equipments?.map((item, index) => (
                 <div key={index}>{item}</div>
               ))}
             />

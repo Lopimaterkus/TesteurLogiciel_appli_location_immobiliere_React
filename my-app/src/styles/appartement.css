@@ -1,4 +1,4 @@
-.apart-div {
+.appart-div {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -6,12 +6,12 @@
     width: 100%;
   }
   
-  .apart-title-tag {
+  .appart-title-tag {
     font-weight: 500;
     margin-left: 50px;
   }
   
-  .apart-rate-host {
+  .appart-rate-host {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
@@ -20,16 +20,16 @@
     gap: 10px;
   }
   
-  .apart-collapse {
+  .appart-collapse {
     margin-left: -90px;
     margin-bottom: 70px;
   }
   
-  .apart-collapse ul {
+  .appart-collapse ul {
     display: flex;
   }
   
-  .apart-collapse li {
+  .appart-collapse li {
     width: 50%;
   }
   
@@ -48,26 +48,26 @@
   }
   
   @media screen and (max-width: 767px) {
-    .apart-div {
+    .appart-div {
       flex-direction: column;
     }
-    .apart-rate-host {
+    .appart-rate-host {
       flex-direction: row-reverse;
       justify-content: space-between;
       width: 100%;
       margin-top: 20px;
     }
-    .apart-collapse {
+    .appart-collapse {
       margin-top: -40px;
       margin-left: -40px;
     }
-    .apart-collapse ul {
+    .appart-collapse ul {
       flex-direction: column;
     }
-    .apart-collapse li {
+    .appart-collapse li {
       width: 97%;
     }
-    .apart-title-tag {
+    .appart-title-tag {
       margin-left: 20px;
     }
   

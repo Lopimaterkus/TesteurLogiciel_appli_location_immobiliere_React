@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <Banner image={banner} title="Chez vous, partout et ailleurs" />
       <section className="card-container">
-        {accomodations.map((apart) => (
-          <Card key={apart.id} data={apart} />
+        {accomodations.map((appart) => (
+          <Card key={appart.id} data={appart} />
         ))}
       </section>
     </>
