@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .about {
     margin-top: 170px;
     margin-left: 80px;
@@ -5,66 +6,103 @@
   }
   
   .collapse {
+    display: flex;
     margin-bottom: 37px;
+    padding: 15px 3%;
+    flex-direction: column;
+    align-items: center;
   }
   
   .collapse-div {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #ff6060;
     border-radius: 5px;
     display: inline-flex;
     height: 47px;
-    width: 80%;
-    margin-left: 100px;
+    width: 100%;
     cursor: pointer;
   }
   
   .collapse-title {
-    font-size: 18px;
     color: white;
     margin: 5px 10px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34.22px;
+    text-align: left;
   }
   
   .collapse-vectorDown {
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
-    width: 100%;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
   }
-  
+
   .collapse-vectorDown.true {
-    justify-content: start;
-    transform: rotate(-180deg);
+    justify-content: flex-start;
+    transform: rotate(180deg);
   }
-  
+  #collapse-Description {
+    padding: 15px 38px;
+    width: 100%;
+    margin-right: 30px;
+    margin-left: -30px;
+  }
+  #collapse-Equipements {
+    padding: 15px 38px;
+    width: 100%;
+    margin-right: 40px;
+  }
   .collapse-description {
     position: relative;
     background-color: #f7f7f7;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: #ff6060;
-    height: auto;
-    width: 80%;
-    line-height: 30px;
-    margin-left: 100px;
-    padding: 15px 10px;
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    width: 96%;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.67px;
+    text-align: left;
+    padding: 0 2%;
   }
   
-  @media screen and (max-width: 767px) {
+  .collapse-description.true {
+    max-height: 150px;
+    padding: 25px 2% 20px 2%;
+  }
+  
+  @media screen and (max-width: 769px) {
+    .collapse {
+      padding: 0px;
+    }
     .about {
-      margin-left: 0px;
-      margin-top: 135px;
+      margin-left: 4%;
+      margin-right: 4%;
     }
-  
-    .collapse-div {
-      width: 92%;
-      margin-left: 20px;
+    #collapse-Description {
+      margin: 0px;
     }
-  
+    #collapse-Equipements {
+      margin: 0px;
+    }
     .collapse-description {
-      width: 92%;
-      margin-left: 20px;
-      line-height: 20px;
-      padding-bottom: 70px;
+      font-size: 13px;
     }
+    .collapse-description.true {
+      max-height: 265px;
+      font-size: 13px;
+  }
+  .collapse-title {
+    font-size: 13px;
+  }
   }

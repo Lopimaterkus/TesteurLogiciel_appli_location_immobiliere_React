@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .host {
     display: flex;
     align-items: center;
@@ -8,11 +9,12 @@
   
   .host-name {
     color: #ff6060;
-    font-size: 18px;
-    line-height: 26px;
     max-width: min-content;
-    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
     font-weight: 500;
+    line-height: 25.67px;
+    text-align: right;
   }
   
   .host-img {
@@ -22,7 +24,7 @@
     overflow: hidden;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 769px) {
     .host {
       margin-top: -20px;
       margin-right: 20px;
@@ -30,5 +32,6 @@
   
     .host-name {
       font-weight: 300;
+      font-size: 12px;
     }
   }

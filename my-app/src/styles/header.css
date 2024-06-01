@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .header {
     display: flex;
     justify-content: space-between;
@@ -13,9 +14,10 @@
   .nav-active {
     padding: 30px;
     width: 50%;
-    color: #ff6060;
+    color: black;
     position: relative;
     text-decoration: underline;
+    font-family: Montserrat;
     font-size: 20px;
     font-weight: 500;
   }
@@ -23,9 +25,11 @@
   .nav-inactive {
     padding: 30px;
     width: 50%;
-    color: #ff6060;
+    color: black;
     position: relative;
     text-decoration: none;
+    font-family: Montserrat;
+    line-height: 34.22px;
     font-size: 20px;
     font-weight: 500;
   }
@@ -37,26 +41,34 @@
     margin-top: 8px;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 769px) {
     nav {
       margin-right: 10px;
     }
   
     .nav-active {
-      padding: 10px;
-      font-size: 15px;
+      padding: 3px;
+      font-size: 11px;
       text-transform: uppercase;
     }
   
     .nav-inactive {
-      padding: 10px;
-      font-size: 15px;
-      text-transform: uppercase;
+      padding: 5px;
+        margin-right: 20px;
+        font-size: 11px;
+        text-transform: uppercase;
     }
   
     .logo {
       height: 35px;
       margin-left: 20px;
-      margin-right: 70px;
+    }
+  }
+  @media screen and (max-width: 358px) {
+    .nav-inactive {
+      margin-right: 0px;
+    }
+    .nav-active {
+      padding: 0px;
     }
   }

@@ -57,7 +57,7 @@ export default function Appartment() {
           </li>
           <li>
             <Collapse
-              title="Équipements"
+              title="Equipements"
               description={appartment.equipments?.map((item, index) => (
                 <div key={index}>{item}</div>
               ))}

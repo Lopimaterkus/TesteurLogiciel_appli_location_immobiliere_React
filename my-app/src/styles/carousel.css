@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 .carousel {
     height: 415px;
     margin: 30px 0 30px 50px;
@@ -53,7 +54,7 @@
     }
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 769px) {
     .carousel {
       height: 260px;
       margin: 0 auto;

@@ -1,20 +1,32 @@
-.title-apart {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.title-appart {
     display: flex;
-    font-size: 24px;
     color: #ff6060;
     margin-top: 0px;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    text-align: left;
+    margin-bottom: 10px;
   }
   
   .location {
-    color: #ff6060;
+    color: black;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: -10px;
   }
   
-  @media screen and (max-width: 767px) {
-    .title-apart {
+  @media screen and (max-width: 769px) {
+    .title-appart {
       font-weight: 400;
       padding-top: 20px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .location {
+    font-size: 14px;
+    line-height: 19.96px;
     }
   }

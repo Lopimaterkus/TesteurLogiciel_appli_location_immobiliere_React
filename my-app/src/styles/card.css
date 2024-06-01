@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .card {
     position: relative;
   }
@@ -9,9 +10,10 @@
     color: white;
     width: 300px;
     height: 52px;
-    line-height: 142, 6%;
+    line-height: 25.67px;
+    font-family: Montserrat;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
   }
   
   .card-img {
@@ -47,7 +49,7 @@
     position: absolute;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 769px) {
     .card h2 {
       width: 80%;
     }
@@ -68,5 +70,10 @@
       padding-left: 0px;
       padding-right: 0px;
       padding-bottom: 0px;
+    }
+  }
+  @media screen and (max-width: 334px) {
+    .card h2 {
+      top: -110px;
     }
   }

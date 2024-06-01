@@ -1,20 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 .rate {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     margin-right: 50px;
+    margin-left: -50px;
     margin-top: -15px;
   }
   
   .full-star {
-    max-width: 24px;
+    color: #FF6060;
+    font-size: 24px;
   }
   
   .empty-star {
-    max-width: 24px;
+    color: #E3E3E3;
+    font-size: 24px;
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 769px) {
     .rate {
       margin-left: 20px;
+      margin-right: 0px;
+    }
+    .full-star {
+      font-size: 18px;
+    }
+    .empty-star {
+      font-size: 18px;
     }
   }

@@ -20,7 +20,7 @@ export default function Header() {
           to="/about"
           className={(nav) => (nav.isActive ? 'nav-active' : 'nav-inactive')}
         >
-          À propos
+          A Propos
         </NavLink>
       </nav>
     </header>
